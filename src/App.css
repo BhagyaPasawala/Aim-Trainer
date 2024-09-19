@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  
+  background-color: #121212;
+  margin: 0;
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-button {
+  padding: 15px 30px; 
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Space Grotesk';
+}
+
+.start-button:hover {
+  background-color: #ff2f2f;
+}
+
+.controls {
+  margin-top: 20px;
+  color: #e0e0e0;
+}
+
+.controls label {
+  color: #e0e0e0;
+}
+
+.game-area {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.target {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff5722;
+  cursor: pointer;
+}
+
+.end-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #e0e0e0;
+}
+
+.end-screen h1 {
+  font-family: 'Space Grotesk';
+}
+
+.end-screen p span {
+  font-weight: bold;
+}
+
+.game-header p {
+  font-family: 'Space Grotesk';
+  font-size: 50px;
+}
+
+.game-header {
+  color: #e0e0e0;
+  display: flex;
+  gap: 50px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    transform: translate(-50%, -90%) scale(1.2); 
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+.target {
+  animation: pulse 1s infinite ease-in-out; 
+}

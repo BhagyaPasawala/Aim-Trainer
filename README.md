@@ -1,3 +1,4 @@
+![2024-09-19 18_19_08-Settings](https://github.com/user-attachments/assets/8cec5947-e20a-4ddf-9181-5e2c68fff6e8)
 A basic aim-trainer to practice your aim.
 
 # React + Vite
